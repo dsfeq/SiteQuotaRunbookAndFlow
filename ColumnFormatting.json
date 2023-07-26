@@ -1,0 +1,22 @@
+    {
+        "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+        "elmType": "div",
+        "children": [
+            {
+                "elmType": "div",
+                "style": {
+                    "padding-right": "5px",
+                    "width": "30px"
+                },
+                "txtContent": "[$Quota]"
+            },
+            {
+                "elmType": "button",
+                "txtContent": "Change",
+                "customRowAction": {
+                    "action": "executeFlow",
+                    "actionParams": "='{\"id\": \"56f41856-4f15-4c12-9fc5-ac88ce206d47\",\"headerText\":\"'+[$DM_CaseSiteUrl.desc]+'\",\"runFlowButtonText\":\"Update\"}'"
+                }
+            }
+        ]
+    }
